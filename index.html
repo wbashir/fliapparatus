@@ -1,30 +1,9 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>SYNQ.fm Fullscreen Video Sample</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel=stylesheet type="text/css" href="main.css">
-  <link rel=stylesheet type="text/css" href="media_queries.css">
-</head>
-<body>
-  <header>
-    <video loop muted autoplay playsinline poster="https://media.giphy.com/media/26Ff43GwoaAks9XgY/giphy.gif">
-        <source src="https://player.vimeo.com/video/298038018" type="video/mp4"  />
-    </video>
-    <div class="banner">
-       <div class="banner-text">
-          Header Text Here
-       </div>
-    </div>
-  </header>
-  <section>
-  Some Content
-  </section>
-  <footer>
-    <div>
-      &copy; Copyright SYNQ.fm Inc.
-    </div>
-  </footer>
-</body>
-</html>
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
